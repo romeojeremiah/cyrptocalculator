@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crypto Calculator</title>
+</head>
+<body>
+    <h1>Crypto Calculator</h1>
+    <h3>Crypto Price Checker</h3>
+    <form action="/pricecheck" method="post">
+        <select name="crypto">
+            <option value="BTC">Bitcoin (BTC)</option>
+            <option value="BCH">Bitcoin Cash (BCH)</option>
+            <option value="LTC">Litecon (LTC)</option>
+            <option value="XRP">Ripple (XRP)</option>
+        </select>
+        <select name="currency">
+            <option value="USD">USD</option>
+        </select>
+    <button type="submit">Get Current Price</button>
+    </form>
+    <h3>Crypto Historical Price Checker</h3>
+    <form action="/historicalprice" method="post">
+        <select name="cryptoHistorical">
+            <option value="BTC">Bitcoin (BTC)</option>
+            <option value="BCH">Bitcoin Cash (BCH)</option>
+            <option value="LTC">Litecon (LTC)</option>
+            <option value="XRP">Ripple (XRP)</option>
+        </select>
+        <select name="currencyHistorical">
+            <option value="USD">USD</option>
+        </select>
+        <input type="date" name="date">
+        <button type="submit">Get Historical Price</button>
+    </form>
+    <h3>Cryto to Fiat Converstion Checker</h3>
+</body>
+</html>
